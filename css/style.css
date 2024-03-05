@@ -158,7 +158,7 @@ ul {
 
 /* Aside Styles */
 .aside {
-    width: 270px;
+    width: 300px; /* Adjust this value to your desired width */
     background: var(--bg-black-100);
     position: fixed;
     left: 0;
@@ -172,6 +172,7 @@ ul {
     z-index: 10;
     transition: all 0.3s ease;
 }
+
 
 /* Logo Styles */
 .aside .logo {
@@ -274,4 +275,36 @@ ul {
 .aside .nav-toggler.open span::after {
     transform: rotate(-45deg);
     top: 0;
+}
+
+/* Additional Changes */
+.hello {
+    font-size: 36px; /* Adjust the size as needed */
+}
+
+.cursive-text {
+    font-family: 'Clicker Script', cursive;
+    font-size: 80px; /* Adjust the font size if needed */
+}
+
+.my-profession {
+    font-size: 24px; /* Adjust the size as needed */
+}
+
+.name {
+    font-size: 42px; /* Adjust the size as needed */
+}
+
+.home-info {
+    padding: 60px;
+    padding-top: 0px; /* Adjust this value to increase space */
+}
+
+
+
+.hello,
+.my-profession,
+.name {
+    font-size: 36px; /* Adjust the size as needed */
+    margin-bottom: 10px; /* Add some spacing between lines */
 }

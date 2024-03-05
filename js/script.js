@@ -94,19 +94,19 @@ if (typeof window !== 'undefined') {
 
     const messages = [
         {
-            Greeting1: "Greetings, I am",
-            Greeting2: "I'm a",
-            Greeting3: "Software Engineer",
+            Greeting1: "Greetings",
+            Greeting2: "I am",
+            Greeting3: "I'm a Software Engineer",
         },
         {
-            Greeting1: "こんにちは, I am",
+            Greeting1: "こんにちは",
             Greeting2: "私 は",
-            Greeting3: "ソフトウェアエンジニア   ",
+            Greeting3: "I'm a ソフトウェアエンジニア   ",
         },
         {
-            Greeting1: "Bonjour, I am",
-            Greeting2: "Je suis un",
-            Greeting3: "ingénieur logiciel"
+            Greeting1: "Bonjour",
+            Greeting2: "Je m'appele",
+            Greeting3: "I'm a ingénieur logiciel"
         },
         // Add more message objects for other languages as needed
     ];
@@ -124,12 +124,17 @@ if (typeof window !== 'undefined') {
         const currentMessage = messages[currentMessageIndex];
         const helloElement = document.querySelector(".hello");
         const professionElement = document.querySelector(".my-profession");
-
-        helloElement.textContent = `${currentMessage.Greeting1} Ashray Gupta`;
-        professionElement.textContent = `${currentMessage.Greeting2} ${currentMessage.Greeting3}`;
-
+        const nameElement = document.querySelector(".name");
+    
+        // Set text content directly
+        helloElement.textContent = currentMessage.Greeting1;
+        professionElement.textContent = currentMessage.Greeting2;
+        nameElement.innerHTML = `<span class="cursive-text">Ashray Gupta</span><br>${currentMessage.Greeting3}`;
+    
         currentMessageIndex = (currentMessageIndex + 1) % messages.length;
     }
+    
+    
 
     updateMessage();
 
