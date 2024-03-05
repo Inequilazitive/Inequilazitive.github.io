@@ -94,19 +94,19 @@ if (typeof window !== 'undefined') {
 
     const messages = [
         {
-            hello: "Greetings, I am",
-            profession: "I'm a",
-            language: "Software Engineer",
+            Greeting1: "Greetings, I am",
+            Greeting2: "I'm a",
+            Greeting3: "Software Engineer",
         },
         {
-            hello: "こんにちは, I am",
-            profession: "私 は",
-            language: "ソフトウェアエンジニア   ",
+            Greeting1: "こんにちは, I am",
+            Greeting2: "私 は",
+            Greeting3: "ソフトウェアエンジニア   ",
         },
         {
-            hello: "Bonjour, I am",
-            profession: "Je suis un",
-            language: "ingénieur logiciel"
+            Greeting1: "Bonjour, I am",
+            Greeting2: "Je suis un",
+            Greeting3: "ingénieur logiciel"
         },
         // Add more message objects for other languages as needed
     ];
@@ -125,8 +125,8 @@ if (typeof window !== 'undefined') {
         const helloElement = document.querySelector(".hello");
         const professionElement = document.querySelector(".my-profession");
 
-        helloElement.textContent = `${currentMessage.hello} Ashray Gupta`;
-        professionElement.textContent = `${currentMessage.profession} ${currentMessage.language}`;
+        helloElement.textContent = `${currentMessage.Greeting1} Ashray Gupta`;
+        professionElement.textContent = `${currentMessage.Greeting2} ${currentMessage.Greeting3}`;
 
         currentMessageIndex = (currentMessageIndex + 1) % messages.length;
     }
