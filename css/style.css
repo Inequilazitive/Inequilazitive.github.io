@@ -64,6 +64,7 @@ ul {
     animation: slideSection 1s ease;
 }
 
+
 /* Keyframes Animation */
 @keyframes slideSection {
     0% {
@@ -291,10 +292,44 @@ ul {
     font-size: 24px; /* Adjust the size as needed */
 }
 
-.name {
-    font-size: 42px; /* Adjust the size as needed */
+.animate-on-load {
+    animation: slideSection 1s ease;
 }
+
+.name-container {
+    position: relative;
+}
+
+.name {
+    font-size: 42px;
+    display: inline-block;
+}
+
+.name-container::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--skin-color);
+    border-left: 5px solid var(--skin-color);
+    bottom: 80px; /* Adjust the bottom value to position it correctly */
+    left: -15px;
+}
+
+.name-container::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    top: 5px; /* Adjust the top value to position it correctly */
+    right: 30px;
+}
+
     
+
+
 .home-info {
     padding: 60px;
     padding-top: 0px; /* Adjust this value to increase space */

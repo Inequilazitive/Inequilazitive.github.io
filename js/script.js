@@ -5,24 +5,18 @@ if (typeof window !== 'undefined') {
     const totalNavList = navList.length;
     const allSection = document.querySelectorAll(".section");
     const totalSection = allSection.length;
-    // const hireMeButton = document.querySelector(".hire-me");
     const navTogglerBtn = document.querySelector(".nav-toggler");
     const aside = document.querySelector(".aside");
 
     for (let i = 0; i < totalNavList; i++) {
         const a = navList[i].querySelector("a");
-        if (a) { // Check if anchor element exists
+        if (a) {
             a.addEventListener("click", () => {
                 const target = a.getAttribute("href").split("#")[1];
                 handleSectionNavigation(target);
             });
         }
     }
-
-    // hireMeButton.addEventListener("click", () => {
-    //     const sectionIndex = hireMeButton.getAttribute("data-section-index");
-    //     handleSectionNavigation(sectionIndex);
-    // });
 
     navTogglerBtn.addEventListener("click", asideSectionTogglerBtn);
 
@@ -69,7 +63,6 @@ if (typeof window !== 'undefined') {
     document.head.appendChild(typedScript);
 
     function initializeTyped() {
-        /* ============================== typing animation ============================ */
         var typed2 = new Typed(".typing2", {
             strings: ["Modern C++", "Technical Interview Basics", "Data Structures and Algorithms", "Computer Architecture"],
             typeSpeed: 80,
@@ -125,20 +118,17 @@ if (typeof window !== 'undefined') {
         const helloElement = document.querySelector(".hello");
         const professionElement = document.querySelector(".my-profession");
         const nameElement = document.querySelector(".name");
-    
-        // Set text content directly
+
         helloElement.textContent = currentMessage.Greeting1;
         professionElement.textContent = currentMessage.Greeting2;
         nameElement.innerHTML = `<span class="cursive-text">Ashray Gupta</span><br>${currentMessage.Greeting3}`;
-    
+
         currentMessageIndex = (currentMessageIndex + 1) % messages.length;
     }
-    
-    
 
     updateMessage();
 
-    setInterval(updateMessage, 2000); // Change message every 2 seconds
+    setInterval(updateMessage, 2000);
 } else {
     console.log("This code is not running in a browser environment.");
 }

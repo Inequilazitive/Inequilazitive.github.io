@@ -1,44 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- <style>
-    .name {
-      font-size: 42px;
-      position: relative;
-      display: inline-block; /* Ensures the border is inline with the text */
-    }
   
-    .name::before,
-    .name::after {
-      content: '';
-      position: absolute;
-      background-color: var(--skin-color);
-    }
-  
-    .name::before {
-      content: '';
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      border-bottom: 5px solid var(--skin-color);
-      border-left: 5px solid var(--skin-color);
-      bottom: 0;
-      left: 0;
-    }
-  
-    .name::after {
-      content: '';
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      border-top: 5px solid var(--skin-color);
-      border-right: 5px solid var(--skin-color);
-      top: 0;
-      right: 0;
-    }
-  </style>
-   -->
-
   
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -77,14 +40,16 @@
         <section class="section home" id="home">
             <div class="container">
                 <div class="row">
-                    <div class="home-info padd-15">
-                        <h2 class="hello">Greetings,</h2>
-                        <h2 class="my-profession">I am</h2>
-                        <div class="logo">
-                        <h2 class="name"><span>Ashray Gupta</span></h2>
-                        </div>
-                        <a href="https://drive.google.com/file/d/1m5VeOJE4lOqjMaiM_RH6-8E_aSmx-75e/view?usp=sharing" class="btn">CV Here</a>
+                  <div class="home-info padd-15">
+                    <h2 class="hello">Greetings,</h2>
+                    <h2 class="my-profession">I am</h2>
+                    <div class="name-wrapper"> <!-- Add this wrapper div -->
+                        <h2 class="name-container">
+                            <span class="name">Ashray Gupta</span>
+                        </h2>
                     </div>
+                    <a href="https://drive.google.com/file/d/1m5VeOJE4lOqjMaiM_RH6-8E_aSmx-75e/view?usp=sharing" class="btn">CV Here</a>
+                </div>
                     <div class="home-img padd-15">
                         <img src="" alt="">
                     </div>
