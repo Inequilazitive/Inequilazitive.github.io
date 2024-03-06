@@ -113,18 +113,29 @@ if (typeof window !== 'undefined') {
 
     let currentMessageIndex = 0;
 
-    function updateMessage() {
-        const currentMessage = messages[currentMessageIndex];
-        const helloElement = document.querySelector(".hello");
-        const professionElement = document.querySelector(".my-profession");
-        const nameElement = document.querySelector(".name");
+    // ... (existing code)
 
-        helloElement.textContent = currentMessage.Greeting1;
-        professionElement.textContent = currentMessage.Greeting2;
-        nameElement.innerHTML = `<span class="cursive-text">Ashray Gupta</span><br>${currentMessage.Greeting3}`;
+function updateMessage() {
+    console.log("Updating message...");
+    const currentMessage = messages[currentMessageIndex];
+    const helloElement = document.querySelector(".hello");
+    const professionElement = document.querySelector(".my-profession");
+    const nameElement = document.querySelector(".name");
 
-        currentMessageIndex = (currentMessageIndex + 1) % messages.length;
-    }
+    helloElement.textContent = currentMessage.Greeting1;
+    professionElement.textContent = currentMessage.Greeting2;
+    nameElement.innerHTML = `<span class="cursive-text">Ashray Gupta</span><br>${currentMessage.Greeting3}`;
+
+    currentMessageIndex = (currentMessageIndex + 1) % messages.length;
+    console.log("Message updated.");
+}
+
+updateMessage();
+setInterval(() => {
+    console.log("Interval function called.");
+    updateMessage();
+}, 2000);
+
 
     updateMessage();
 
