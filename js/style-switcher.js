@@ -26,31 +26,40 @@ function setActiveStyle(color)
     })
 }
 /* ========================== theme light and dark mode =========================== */
+/* ========================== theme light and dark mode =========================== */
+/* ========================== theme light and dark mode =========================== */
 const dayNight = document.querySelector(".day-night");
+
 dayNight.addEventListener("click", () => {
     dayNight.querySelector("i").classList.toggle("fa-sun");
     dayNight.querySelector("i").classList.toggle("fa-moon");
     document.body.classList.toggle("dark");
-})
+
+    // Toggle text color based on the theme
+    const textColorVariable = document.body.classList.contains("dark") ? '--dark-text-color' : '--light-text-color';
+    document.documentElement.style.setProperty('--name-color', `var(${textColorVariable})`);
+});
+
 window.addEventListener("load", () => {
-    if(document.body.classList.contains("dark"))
-    {
+    if (document.body.classList.contains("dark")) {
         dayNight.querySelector("i").classList.add("fa-sun");
-    }
-    else
-    {
+    } else {
         dayNight.querySelector("i").classList.add("fa-moon");
     }
-})
+
+    // Set initial text color based on the theme
+    const textColorVariable = document.body.classList.contains("dark") ? '--dark-text-color' : '--light-text-color';
+    document.documentElement.style.setProperty('--name-color', `var(${textColorVariable})`);
+});
+
+
 /* ========================== init dark mode and my colors! =========================== */
 window.onload = function() {
     document.body.classList.toggle("dark");
+
+    // Set initial text color based on the theme
+    const textColorVariable = document.body.classList.contains("dark") ? '--dark-text-color' : '--light-text-color';
+    document.documentElement.style.setProperty('--name-color', `var(${textColorVariable})`);
+
     setActiveStyle('color-3');
-    // while (true){
-    //     for (let i = 0; i < 5; i++){
-    //         await delay(5000);
-    //         let victim = 'color-' + i; 
-    //         setActiveStyle(victim);
-    //     }  
-    // }
 }

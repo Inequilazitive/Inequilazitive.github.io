@@ -6,7 +6,14 @@
     --bg-black-50: #e8dfec;
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
+    --light-text-color: #333;
+    --dark-text-color: #fff;
+    --name-color: var(--dark-text-color); /* Set default text color to dark */
+
+    /* Add more custom variables if needed */
+
 }
+
 
 body.dark {
     --bg-black-900: #151515;
@@ -281,6 +288,7 @@ ul {
 
 /* Additional Changes */
 .hello {
+    color: var(--name-color);
     font-size: 36px; /* Adjust the size as needed */
 }
 
@@ -290,6 +298,7 @@ ul {
 }
 
 .my-profession {
+    color: var(--name-color);
     font-size: 24px; /* Adjust the size as needed */
 }
 
@@ -302,9 +311,11 @@ ul {
 }
 
 .name {
+    color: var(--name-color);
     font-size: 42px;
     display: inline-block;
 }
+
 
 .name-container::before {
     content: '';
