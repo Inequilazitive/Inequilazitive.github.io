@@ -292,7 +292,7 @@ ul {
     font-size: 24px; /* Adjust the size as needed */
 }
 
-.animate-on-load {
+.name-wrapper {
     animation: slideSection 1s ease;
 }
 
@@ -326,7 +326,6 @@ ul {
     top: 5px; /* Adjust the top value to position it correctly */
     right: 30px;
 }
-
     
 
 
