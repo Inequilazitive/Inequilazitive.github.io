@@ -129,7 +129,7 @@ function updateMessage() {
     currentMessageIndex = (currentMessageIndex + 1) % messages.length;
     console.log("Message updated.");
 }
-
+//Error checking kinda
 updateMessage();
 setInterval(() => {
     console.log("Interval function called.");
