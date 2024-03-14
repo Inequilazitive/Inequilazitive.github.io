@@ -1,0 +1,57 @@
+/* Rope and bulbs CSS */
+/* Rope and bulbs CSS */
+
+.rope-container {
+    position: relative;
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Align rope to the right initially */
+}
+
+.bulbs {
+    position: absolute;
+    top: 50px; /* Adjust top position to align with the icons and text */
+    left: 50%; /* Adjust left position to center */
+    transform: translateX(-50%);
+}
+
+.bulb {
+    width: 20px;
+    height: 20px;
+    background-color: #f0ff00; /* Adjust bulb color */
+    border-radius: 50%;
+    margin-bottom: 10px; /* Adjust spacing between bulbs */
+}
+
+.rope {
+    width: 2px;
+    height: calc(100% - 50px); /* Adjust rope height */
+    background-color: #000; /* Adjust rope color */
+    position: absolute;
+    top: 50px; /* Adjust top position to align with the icons and text */
+    left: 50%; /* Adjust horizontal position */
+    transform: translateX(-50%);
+}
+
+
+.nav.hidden {
+    display: none;
+}
+
+.bulb1 { animation: bulbAnimation 1s ease forwards 0.5s; }
+.bulb2 { animation: bulbAnimation 1s ease forwards 1s; }
+.bulb3 { animation: bulbAnimation 1s ease forwards 1.5s; }
+.bulb4 { animation: bulbAnimation 1s ease forwards 2s; }
+.bulb5 { animation: bulbAnimation 1s ease forwards 2.5s; }
+
+@keyframes ropeAnimation {
+    0% { height: 0; }
+    100% { height: 100%; }
+}
+
+@keyframes bulbAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}

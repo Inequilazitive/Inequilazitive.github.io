@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
-  
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,10 +13,12 @@
     <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
     <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
     <link rel="stylesheet" href="css/style-switcher.css">
+    <link rel="stylesheet" href="css/rope-bulbs.css">
 </head>
 <body>
+  
 
-<div class="main-container">
+  <div class="main-container">
     <div class="aside">
         <div class="logo">
             <a href="#"><span>Inequilazitive</span></a>
@@ -26,15 +26,31 @@
         <div class="nav-toggler">
             <span></span>
         </div>
-        <ul class="nav">
-            <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
-            <li><a href="#about"><i class="fa fa-user"></i> About Me</a></li>
-            <li><a href="#projects"><i class="fa fa-list"></i> Projects</a></li>
-            <li><a href="#tech-blogs"><i class="fa fa-list"></i> Technical Blogs</a></li>
-            <li><a href="#personal-blogs"><i class="fa fa-list"></i> Personal Blogs</a></li>
-            <li><a href="#connect"><i class="fa fa-comments"></i> Connect</a></li>
-        </ul>
+        <!-- Rope and bulbs moved inside the aside -->
+        <div class="rope-container">
+            <div class="bulbs">
+                <div class="bulb bulb1"></div>
+                <div class="bulb bulb2"></div>
+                <div class="bulb bulb3"></div>
+                <div class="bulb bulb4"></div>
+                <div class="bulb bulb5"></div>
+            </div>
+            <div class="rope"></div>
+        </div>
+      <ul class="nav hidden"> <!-- Initially hide the nav -->
+          <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+          <li><a href="#about"><i class="fa fa-user"></i> About Me</a></li>
+          <li><a href="#projects"><i class="fa fa-list"></i> Projects</a></li>
+          <li><a href="#tech-blogs"><i class="fa fa-list"></i> Technical Blogs</a></li>
+          <li><a href="#personal-blogs"><i class="fa fa-list"></i> Personal Blogs</a></li>
+          <li><a href="#connect"><i class="fa fa-comments"></i> Connect</a></li>
+      </ul>
+  </div>
+
+        
+
     </div>
+
 
     <div class="main-content">
         <section class="section home" id="home">
