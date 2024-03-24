@@ -51,7 +51,7 @@ window.addEventListener("load", () => {
     const textColorVariable = document.body.classList.contains("dark") ? '--dark-text-color' : '--light-text-color';
     document.documentElement.style.setProperty('--name-color', `var(${textColorVariable})`);
 });
-
+//DOne
 
 /* ========================== init dark mode and my colors! =========================== */
 window.onload = function() {

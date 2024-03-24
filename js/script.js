@@ -129,7 +129,18 @@ function updateMessage() {
     currentMessageIndex = (currentMessageIndex + 1) % messages.length;
     console.log("Message updated.");
 }
+// Wait for the DOM to be fully loaded
+document.addEventListener("DOMContentLoaded", function() {
+    // Trigger the rope and bulbs animations
+    setTimeout(function() {
+        document.querySelector('.bulbs').style.animation = 'bulbsAppear 1s forwards';
+        // Show the navigation after bulbs appear
+        document.querySelector('.nav').classList.remove('hidden');
+    }, 1500); // Adjust the delay to match the rope animation duration
+});
 
+
+//Error checking kinda
 updateMessage();
 setInterval(() => {
     console.log("Interval function called.");
