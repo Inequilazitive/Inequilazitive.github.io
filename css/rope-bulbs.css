@@ -1,4 +1,5 @@
 /* Rope and bulbs CSS */
+<<<<<<< HEAD
 /* Rope and bulbs CSS */
 
 .rope-container {
@@ -15,6 +16,19 @@
     top: 50px; /* Adjust top position to align with the icons and text */
     left: 50%; /* Adjust left position to center */
     transform: translateX(-50%);
+=======
+.rope-container {
+    display: grid;
+    grid-template-columns: auto auto; /* Two columns: one for bulbs, one for text */
+    align-items: center;
+}
+
+.bulbs {
+    display: flex;
+    flex-direction: column; /* Align bulbs vertically */
+    align-items: center; /* Center bulbs horizontally */
+    gap: 10px; /* Adjust spacing between bulbs */
+>>>>>>> 63729172637ad31ecb1326199b6dfd325ee37ff6
 }
 
 .bulb {
@@ -22,6 +36,7 @@
     height: 20px;
     background-color: #f0ff00; /* Adjust bulb color */
     border-radius: 50%;
+<<<<<<< HEAD
     margin-bottom: 10px; /* Adjust spacing between bulbs */
 }
 
@@ -36,6 +51,43 @@
 }
 
 
+=======
+}
+
+.nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    margin-bottom: 10px; /* Adjust spacing between text and bulbs */
+}
+
+.nav li a {
+    display: flex;
+    align-items: center; /* Align text and icons vertically */
+    text-decoration: none;
+    color: #000; /* Adjust text color */
+}
+
+.nav li a i {
+    margin-right: 5px; /* Adjust spacing between icon and text */
+}
+
+/* Adjustments for the rope */
+.rope {
+    width: 2px;
+    height: 100%; /* Stretch rope to full height */
+    background-color: #000; /* Adjust rope color */
+    margin-right: 10px; /* Adjust spacing between rope and bulbs */
+}
+
+
+
+
+
+>>>>>>> 63729172637ad31ecb1326199b6dfd325ee37ff6
 .nav.hidden {
     display: none;
 }
