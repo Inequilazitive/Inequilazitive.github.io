@@ -1,5 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
+
+    @font-face {
+        font-family: 'Chirp2'; /* Name your font family */
+        src: url("chirp-2\\ChirpBold.ttf") format('truetype'); /* Path to your font file */
+        /* You can specify multiple font formats for better browser compatibility */
+        /* src: url('path-to-font.woff') format('woff'),
+                url('path-to-font.woff2') format('woff2'); */
+        /* Add more font properties if needed, such as font-weight and font-style */
+    }
+    
 :root {
     --bg-black-900: #f2f2fc;
     --bg-black-100: #fdf9ff;
@@ -363,14 +373,13 @@ ul {
 
 /* Change the color of the icons and text */
 .aside .nav li a {
-    color: #00fff2; /* Change the color to your desired color */
+    color: var(--name-color); /* Change the color to your desired color */
 }
 
 /* Add space between the icons and text */
 .aside .nav li a {
     padding-left: 20px; /* Adjust the left padding as needed */
-    
-
+    font-family: 'Chirp2';
 }
 .aside .nav li {
     margin-bottom: 20px; /* Adjust the bottom margin as needed */
@@ -413,5 +422,20 @@ ul {
     border-left: 5px solid var(--skin-color);
     bottom: -2.5%; /* Adjust the bottom offset */
     left: -2.5%; /* Adjust the left offset */
+}
+
+.aside .nav li {
+    margin-bottom: 20px; /* Adjust the bottom margin as needed */
+    position: relative;
+}
+
+.aside .nav li::after {
+    content: '';
+    position: absolute;
+    width: 100%; /* Set the width to cover the entire width of the navigation item */
+    height: 1px; /* Set the height of the line */
+    background-color: var(--skin-color); /* Set the color of the line */
+    bottom: -5px; /* Adjust the position of the line */
+    left: 0;
 }
 
