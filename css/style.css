@@ -368,7 +368,7 @@ ul {
 
 /* Increase the size of the icons and text */
 .aside .nav li a {
-    font-size: 23px; /* Adjust the size as needed */
+    font-size: 18px; /* Adjust the size as needed */
 }
 
 /* Change the color of the icons and text */
@@ -433,8 +433,8 @@ ul {
     content: '';
     position: absolute;
     width: 100%; /* Set the width to cover the entire width of the navigation item */
-    height: 1px; /* Set the height of the line */
-    background-color: var(--skin-color); /* Set the color of the line */
+    height: 0.5px; /* Set the height of the line */
+    background-color: var(--name-color); /* Set the color of the line */
     bottom: -5px; /* Adjust the position of the line */
     left: 0;
 }
