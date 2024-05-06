@@ -193,6 +193,11 @@ ul {
     transition: all 0.3s ease;
 }
 
+.home-info .btn {
+    position: relative;
+    top: 20px; /* Adjust the top value to move the button down */
+}
+
 
 /* Logo Styles */
 .aside .logo {
