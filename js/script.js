@@ -139,6 +139,25 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 1500); // Adjust the delay to match the rope animation duration
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    // Target the typing paragraph element
+    var aboutParagraph = document.querySelector('.typing-paragraph');
+
+const aboutTyping = new Typed(aboutParagraph, {
+    strings: ['Okay first thing\'s first, Warm Greetings!. I am Final year student pursuing the (a little uncommon) Computation and Mathematics degree. I\'m a Software Engineer and AI/ML developer based in India (for now!). In addition to the Software based internships and client work, I\'ve also bring along Project Manager experience where I successfully oversaw and implemented projects worth more than $120,000 with my team. Did I tell you, I\'m a poet and writer too? Now you know. So let\'s stitch some stories together. Trust me, you won\'t be disappointed :)'],
+    typeSpeed: 5, // Adjust typing speed as needed
+    loop: false, // Disable looping to type the paragraph only once
+    onComplete: function () {
+        console.log('Trigger');
+        const techStackSection = document.querySelector('.container_Tech_stack');
+        techStackSection.classList.remove('hidden_Tech_Stack'); // Show the section
+    }
+});
+});
+
+
+
+
 
 //Error checking kinda
 updateMessage();

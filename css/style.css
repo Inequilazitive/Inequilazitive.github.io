@@ -444,3 +444,99 @@ ul {
     left: 0;
 }
 
+.about-content h2.section-title {
+    font-size: 36px; /* Adjust the font size as needed */
+    color: var(--text-black-900); /* Use custom variable or color code */
+    margin-bottom: 20px; /* Add spacing below the heading */
+}
+
+.about-paragraph p {
+    font-size: 18px; /* Adjust the font size as needed */
+    color: var(--text-black-700); /* Use custom variable or color code */
+    line-height: 1.6; /* Adjust line height for readability */
+}
+
+.container_Tech_stack {
+    position: relative; /* Change to relative positioning */
+    margin-top: 50px; /* Add margin to push it down from the top */
+    display: flex;
+    flex-direction: column;
+}
+
+.container_Tech_stack .square{
+    margin-left: 50px;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: #ddd;
+    transform-style: preserve-3d;
+    margin: -15px; /* Adjust vertical margin as needed */
+   
+}
+
+
+
+/* Additional style to hide the section initially */
+.hidden_Tech_Stack {
+    display: none;
+}
+  
+.sq1 {
+    transform: rotateX(-90deg); /* Initially rotated -90deg on X-axis */
+    animation: animatemid2 2s infinite alternate;
+  }
+  
+.sq2 {
+    transform: rotateX(-90deg); /* Initially rotated -70deg on X-axis */
+    animation: animatemid2 2s infinite alternate;
+  }
+  
+.sq3 {
+    transform: rotateX(-90deg); /* Initially rotated -50deg on X-axis */
+    animation: animatemid2 2s infinite alternate;
+  }
+  
+.sq4 {
+    transform: rotateX(-90deg); /* Initially rotated -50deg on X-axis */
+    animation: animatemid2 2s infinite alternate;
+  }
+
+.sq5 {
+    transform: rotateX(-90deg); /* Initially rotated -50deg on X-axis */
+    animation: animatemid2 2s infinite alternate;
+  }
+  
+.sq6 {
+    transform: rotateX(-90deg); /* Initially rotated -50deg on X-axis */
+    animation: animatemid2 2s infinite alternate;
+  }
+
+@keyframes animatemid2 {
+    from {
+      transform: rotateX(-80deg) rotateZ(-90deg);
+    }
+    to {
+      transform: rotateX(-80deg) rotateZ(270deg);
+    }
+  }
+
+/* @keyframes animatemid {
+    from {
+      transform: rotateX(-85deg) rotateZ(-90deg);
+    }
+    to {
+      transform: rotateX(-85deg) rotateZ(270deg);
+    }
+  }
+  
+
+@keyframes animate {
+    from {
+      transform: rotateX(-89deg) rotateZ(-90deg);
+    }
+    to {
+      transform: rotateX(-89deg) rotateZ(270deg);
+    }
+  } */
