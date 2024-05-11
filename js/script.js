@@ -155,6 +155,35 @@ const aboutTyping = new Typed(aboutParagraph, {
 });
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    const squares = document.querySelectorAll('.square');
+    const languageInfos = document.querySelectorAll('.language-info');
+
+    squares.forEach((square, index) => {
+        square.addEventListener('click', () => {
+            // Toggle visibility of language info corresponding to the clicked square
+
+            languageInfos.forEach(info => {
+                info.classList.add('hidden');
+            });
+            
+            languageInfos[index].classList.toggle('hidden');
+        });
+    });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

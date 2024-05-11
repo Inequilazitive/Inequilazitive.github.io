@@ -473,8 +473,8 @@ ul {
     background-color: #ddd;
     transform-style: preserve-3d;
     margin: -15px; /* Adjust vertical margin as needed */
-   
 }
+
 
 
 
@@ -522,6 +522,8 @@ ul {
     }
   }
 
+
+
 /* @keyframes animatemid {
     from {
       transform: rotateX(-85deg) rotateZ(-90deg);
@@ -540,3 +542,46 @@ ul {
       transform: rotateX(-89deg) rotateZ(270deg);
     }
   } */
+
+  .language-info {
+    position: absolute;
+    top: 36%;
+    left: 51%; /* Position relative to the right side of the square */
+    padding: 10px;
+    z-index: 1;
+}
+
+
+.language-info::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    top: 0;
+    right: 0px;
+}
+
+.language-info::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--skin-color);
+    border-left: 5px solid var(--skin-color);
+    bottom: -6%;
+    left: -3%;
+}
+
+.language-info .language-name {
+    color: var(--name-color);
+}
+
+.language-info .experience-info {
+    color: var(--name-color);
+}
+
+.language-info .additional-info {
+    color: var(--name-color);
+}
